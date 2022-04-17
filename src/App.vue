@@ -1,20 +1,31 @@
 <template>
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+    <PersonalCard />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import MenuPopUp from "./components/menus/pop-up/MenuPopUp.vue";
+import PersonalCard from "./components/cards/PersonalCard.vue";
 
 export default {
     name: "App",
     components: {
-        HelloWorld,
+        PersonalCard,
     },
 };
 </script>
 
 <style>
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
