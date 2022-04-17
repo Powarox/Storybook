@@ -16,3 +16,6 @@ const Template = (args) => ({
 
 export const Basic = Template.bind({});
 Basic.args = {};
+Basic.parameters = {
+    backgrounds: { default: "grey" },
+};
